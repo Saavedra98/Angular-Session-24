@@ -1,0 +1,17 @@
+<div class="container">
+
+    <h1 mat-dialog-title>Hola {{data.name}}</h1>
+    <div mat-dialog-content>
+        <p>Cual es tu deporte favorito?</p>
+        <mat-form-field appearance="fill">
+            <mat-label>Deporte Favorito</mat-label>
+            <input matInput [(ngModel)]="data.deporte">
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancelar</button>
+        <button mat-button [mat-dialog-close]="data.deporte" cdkFocusInitial>Ok</button>
+    </div>
+
+
+</div>

@@ -1,0 +1,27 @@
+.container{
+    box-shadow: 2px 2px 2px 2px gray;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.titulo{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.nombre{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.deporte{
+    margin-top: 25px;
+}
+
+.negrita{
+    font-weight: 700;
+}

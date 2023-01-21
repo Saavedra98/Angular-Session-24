@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class=" titulo flex items-center py-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="angular" width="50px" height="50px">
+        <h3 class="nombre pt-3">Angular Material</h3>
+    </div>
+
+    <ol>
+        <li>
+          <mat-form-field appearance="fill">
+            <mat-label>Cual es tu nombre?</mat-label>
+            <input matInput [(ngModel)]="name">
+          </mat-form-field>
+        </li>
+        <li>
+          <button mat-raised-button (click)="openDialog()">Abrir Dialog</button>
+        </li>
+        <li class="deporte" *ngIf="deporte">
+          <span class="negrita"> {{name}} </span> , Tu deporte favorito es: <span class="negrita"> {{deporte}} </span>
+        </li>
+      </ol>
+
+
+
+
+</div>
